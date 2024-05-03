@@ -14,7 +14,7 @@ const BlogContent = () => {
             quickly and efficiently about what's most interesting A in this
             post's contents.
           </p>
-          <p className="mt-4 font-bold ">Continue reading…</p>
+          <p className="mt-4 text-xl font-bold cursor-pointer ">Continue reading…</p>
         </div>
       </div>
       <div className="w-full mt-5 flex gap-x-6 ">
