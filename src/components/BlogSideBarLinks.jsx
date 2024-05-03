@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const BlogSideBarLinks = (props) => {
   const content = props.content;
-  console.log("content", content);
+  // console.log("content", content);
   return (
     <div className="flex flex-col mt-3 p-5">
       <p className="italic text-xl font-bold mb-1">{content?.title}</p>
@@ -17,7 +17,6 @@ const BlogSideBarLinks = (props) => {
           </NavLink>
         </div>
       ))}
-      
     </div>
   );
 };
