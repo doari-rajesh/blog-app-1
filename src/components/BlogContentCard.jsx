@@ -2,7 +2,7 @@ import React from "react";
 
 const BlogContentCard = ({ title, heading, date, description, titleColor }) => {
   return (
-    <div className="w-[55%] min-h-max flex  border-2 border-grey-200 rounded-md drop-shadow-sm">
+    <div className="w-full md:w-[55%] min-h-max flex  border-2 border-grey-200 rounded-md drop-shadow-sm">
       <div className="w-[60%] m-4">
         <p className={`${titleColor} text-sm font-bold`}>{title}</p>
         <h3 className=" text-2xl font-bold mt-1">{heading}</h3>

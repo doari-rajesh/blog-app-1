@@ -11,11 +11,14 @@ const NavBar = () => {
             Subscribe
           </p>
         </NavLink>
-        <h1 className=" text-4xl font-bold hover:cursor-pointer">Large</h1>
+        <h1 className="text-2xl md:text-4xl font-bold hover:cursor-pointer">
+          Large
+        </h1>
         <div className="flex justify-center gap-x-4 items-center hover:cursor-pointer">
           <CiSearch
             fontSize={24}
             style={{ fontWeight: 900, fill: "#374151" }}
+            className="h-6 w-6 md:h-8 md:w-8 text-gray-700"
           />
           <NavLink to="/signup">
             <button className="border border-black px-3 py-1 rounded font-medium text-sm text-gray-500">

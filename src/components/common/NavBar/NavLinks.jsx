@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 const NavLinks = () => {
   return (
     <>
-      <div className="w-full flex justify-between items-center px-3 my-3">
+      <div className="hidden w-full md:flex flex-row justify-between items-center px-3 my-3">
         {NavbarLinks.map((element) => {
           return (
             <NavLink to={element?.link}>
