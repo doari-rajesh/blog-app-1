@@ -70,19 +70,19 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 
-The <Routes> component is used for defining the routing structure of your React application. It allows you to map specific paths to different components. Here's a brief overview of the routes defined in this example:
+The Routes component is used for defining the routing structure of your React application. It allows you to map specific paths to different components. Here's a brief overview of the routes defined in this example:
 
 1. Home Route
 Path: /
-Component: <Home />
+Component: Home 
 Description: This route renders the Home component, which presumably serves as the landing page of the application.
 2. Blog Post Form Route
 Path: /blog-form
-Component: <BlogPostForm />
+Component: BlogPostForm 
 Description: This route renders the BlogPostForm component, which is used for creating or editing a blog post.
 3. Not Found Route
 Path: *
-Component: <NotFound />
+Component: NotFound
 Description: This route serves as a fallback for any undefined paths, rendering the NotFound component. It's typically used to handle 404 errors or unrecognized URLs
 
 
