@@ -2,9 +2,9 @@ import NavBar from "./components/common/NavBar/NavBar";
 import NavLinks from "./components/common/NavBar/NavLinks";
 import { Routes, Route } from "react-router-dom";
 import Home from "./components/pages/Home";
-import BlogPostForm from "./components/BlogPostForm";
+import BlogPostForm from "./commonForm/BlogPostForm";
 import Footer from "./components/common/Footer";
-import NotFound from "./components/PageNotFound";
+import NotFound from "./components/common/PageNotFound";
 
 //  md:bg-red-500"
 function App() {

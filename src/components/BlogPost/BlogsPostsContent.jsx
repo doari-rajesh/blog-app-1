@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
-import BlogSideBar from "./BlogSideBar";
+import BlogSideBar from "../BlogPostSideBar/BlogSideBar";
 import BlogPostCard from "./BlogPostCard";
-import { AppContext } from "../context/AppContext";
+import { AppContext } from "../../context/AppContext";
 
 const BlogsPostsContent = () => {
   const { blog } = useContext(AppContext);

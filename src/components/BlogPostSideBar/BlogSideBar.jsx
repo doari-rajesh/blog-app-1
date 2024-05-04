@@ -1,6 +1,6 @@
 import React from "react";
-import About from "./common/About";
-import { SideBarLinks } from "../data/sidebarlinks";
+import About from "../common/About";
+import { SideBarLinks } from "../../data/sidebarlinks";
 import BlogSideBarLinks from "./BlogSideBarLinks";
 import { NavLink } from "react-router-dom";
 
