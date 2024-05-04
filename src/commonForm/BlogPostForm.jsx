@@ -56,7 +56,7 @@ const BlogPostForm = () => {
     // Today's date
     // const today = new Date().toISOString().slice(0, 10);
 
-    console.log(formData.date);
+    // console.log(formData.date);
     if (!formData.date) {
       errors.date = "Date should be filled";
     }
@@ -64,10 +64,10 @@ const BlogPostForm = () => {
     setErrors(errors);
 
     if (Object.keys(errors).length === 0) {
-      console.log(formData);
+
       // Add logic to handle form submission
 
-      console.log(formData);
+      // console.log(formData);
 
       setBlog((prev) => {
         return [...prev, formData];
