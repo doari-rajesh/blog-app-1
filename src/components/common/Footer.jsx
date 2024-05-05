@@ -8,6 +8,7 @@ const Footer = () => {
       behavior: "smooth", // Optional smooth scrolling
     });
   };
+
   return (
     <div className="w-full flex flex-col gap-y-2 justify-center items-center h-[10rem] bg-gray-100 p-[5rem] text-base font font-medium text-gray-400">
       <p>

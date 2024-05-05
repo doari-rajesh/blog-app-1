@@ -1,8 +1,9 @@
 import React, { useContext, useState } from "react";
-import { useNavigate } from "react-router-dom";
 import { AppContext } from "../context/AppContext";
+import { useNavigate } from "react-router-dom";
 
 const BlogPostForm = () => {
+  const [errors, setErrors] = useState({});
   const [formData, setFormData] = useState({
     name: "",
     title: "",
@@ -11,19 +12,21 @@ const BlogPostForm = () => {
     heading: "",
     sub_heading: "",
   });
-
-  const [errors, setErrors] = useState({});
-  const navigate = useNavigate();
   const { setBlog } = useContext(AppContext);
+
+  // used navigate to redirect
+  const navigate = useNavigate();
 
   const handleOnChange = (event) => {
     const { name, value } = event.target;
+
     setErrors((prev) => {
       return {
         ...prev,
         [name]: false,
       };
     });
+
     setFormData((prevData) => ({
       ...prevData,
       [name]: value,
@@ -53,10 +56,11 @@ const BlogPostForm = () => {
       errors.description =
         "Description length should be between 10 and 100 characters";
     }
+
     // Today's date
     // const today = new Date().toISOString().slice(0, 10);
-
     // console.log(formData.date);
+
     if (!formData.date) {
       errors.date = "Date should be filled";
     }
@@ -64,11 +68,7 @@ const BlogPostForm = () => {
     setErrors(errors);
 
     if (Object.keys(errors).length === 0) {
-
-      // Add logic to handle form submission
-
-      // console.log(formData);
-
+      // set blog content to context store - Blog state
       setBlog((prev) => {
         return [...prev, formData];
       });
@@ -82,6 +82,7 @@ const BlogPostForm = () => {
         sub_heading: "",
       });
 
+      // redirected to home page
       navigate("/");
     }
   };

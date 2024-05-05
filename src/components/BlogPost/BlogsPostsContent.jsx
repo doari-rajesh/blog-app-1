@@ -4,6 +4,7 @@ import BlogPostCard from "./BlogPostCard";
 import { AppContext } from "../../context/AppContext";
 
 const BlogsPostsContent = () => {
+  // using conext store value - Blog state
   const { blog } = useContext(AppContext);
 
   return (
@@ -15,9 +16,6 @@ const BlogsPostsContent = () => {
         {blog.map((blog, index) => (
           <BlogPostCard key={index} blogPostData={blog} />
         ))}
-        {/* <BlogPostCard />
-        <BlogPostCard />
-        <BlogPostCard /> */}
       </div>
       <BlogSideBar />
     </div>
