@@ -8,8 +8,8 @@ const BlogsPostsContent = () => {
   const { blog } = useContext(AppContext);
 
   return (
-    <div className="mt-5 flex gap-x-1">
-      <div className="w-[70%] p-3">
+    <div className="mt-5 flex md:flex-row flex-col gap-x-1">
+      <div className="w-full md:w-[70%] p-3">
         <p className=" text-2xl italic pb-3 font-bold border-b-2 border-gray-200">
           From The Firehose
         </p>
